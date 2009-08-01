@@ -10,6 +10,7 @@
 	
 			'adminshout:success' => 'Successfully sent message to members',
 			'adminshout:fail' => 'Could not notify users',
+			'adminshout:inputs' => 'Please make sure you include a title and message before sending to all users',
 	
 			'adminshout:send' => 'Send message...',
 	);
