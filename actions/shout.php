@@ -10,7 +10,7 @@
 	$__elgg_token = get_input("__elgg_token");
 	
 	$offset = (int)get_input('offset', 0);
-	$limit = 50;
+	$limit = 2000;
 	
 	//check there is a title and message
 	if($subject && $message){
@@ -22,6 +22,7 @@
 			$_SESSION['_adminshout:message'] = $message;
 			
 			foreach ($users as $u) {
+				set_time_limit(30); // ask for more time
 				notify_user($u->guid, get_loggedin_userid(), $subject, $message);
 			}
 			
