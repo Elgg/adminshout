@@ -1,7 +1,6 @@
 <?php
 	global $CONFIG;
 
-	action_gatekeeper();
 	admin_gatekeeper();
 	
 	$subject = get_input('subject', $_SESSION['_adminshout:subject']);
