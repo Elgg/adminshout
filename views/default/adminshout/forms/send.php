@@ -20,4 +20,3 @@ $form = <<< END
 END;
 
 echo elgg_view('input/form', array('body' => $form, 'action' => $CONFIG->wwwroot . "action/adminshout/shout"));
-?>

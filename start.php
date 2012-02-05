@@ -30,4 +30,3 @@ function adminshout_page_handler($page){
 
 register_elgg_event_handler('init','system','adminshout_init');
 register_elgg_event_handler('pagesetup','system','adminshout_pagesetup');
-?>

@@ -21,4 +21,3 @@ $title = elgg_view_title(elgg_echo('adminshout'));
 $body = "<p class='margin_top'>".elgg_echo('adminshout:description')."</p>".elgg_view('adminshout/forms/send');
 
 page_draw(elgg_echo('diagnostics'),elgg_view_layout("one_column_with_sidebar", $title . $body));
-?>
